@@ -152,8 +152,8 @@ if __name__ == '__main__':
 
     #If all checks are passed, the object is created and the user executes its run() function
     else:
-        syncFolder = FolderSynchronizer(replicaPath=sys.argv[2],
-                                        sourcePath=sys.argv[1],
+        syncFolder = FolderSynchronizer(sourcePath=sys.argv[1],
+                                        replicaPath=sys.argv[2],
                                         syncTimeInterval=sys.argv[3],
                                         logFilePath=sys.argv[4])
         
